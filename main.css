@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap");
+
+* {
+  margin: 0;
+}
+
+/* LOGO */
+
+header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 6.1fr 1fr;
+}
+
+.top-strip,
+.bottom-strip {
+  background: url(../comicBook+Pics/background/b&w.jpg);
+}
+
+.top-strip {
+  grid-row: 1/2;
+}
+
+.bottom-strip {
+  grid-row: 3/4;
+}
+
+.middle-strip {
+  grid-row: 2/3;
+}
+
+.middle-strip img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.logo-title-container {
+  position: absolute;
+  left: 440px;
+  top: 41px;
+}
+
+.free-and-legal-container {
+  position: absolute;
+  left: 0px;
+  z-index: 2;
+}
+
+.est-container {
+  position: absolute;
+  left: 1245px;
+  top: 75px;
+}
+
+/* -------END OF LOGO ------- */
+
+/* NAVBAR */
+
+nav {
+  max-width: 100%;
+  width: 1536px;
+  height: 40px;
+  background-color: black;
+  display: flex;
+  position: relative;
+}
+
+.list-items {
+  padding-left: 0;
+}
+
+.nav-list-item {
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: inline-block;
+  height: 100%;
+  color: white;
+  list-style: none;
+  font-family: chelsea market, cursive;
+  font-size: 22px;
+  z-index: 3;
+}
+
+.nav-list-item a {
+  color: #ffd700;
+  text-decoration: none;
+  position: relative;
+  top: 4px;
+}
+
+.nav-list-item:hover,
+.nav-list-item:hover > a {
+  background-color: #ffd700;
+  color: black;
+}
+
+.nav-list-item:hover .expanded {
+  display: block;
+}
+
+.list-downarrow {
+  position: relative;
+  top: 6px;
+  left: 5px;
+  padding-right: 5px;
+  color: #ffd700;
+}
+
+.expanded {
+  min-width: 140px;
+  width: max-content;
+  display: none;
+  padding-left: 0;
+  background-color: black;
+  color: white;
+  font-family: chelsea market, cursive;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  font-size: 20px;
+  z-index: 5;
+  border: 1px solid #ffd700;
+}
+.expanded li {
+  list-style: none;
+  border-bottom: 1px solid #ffd700;
+  padding: 10px 15px 10px 15px;
+  cursor: pointer;
+}
+
+.expanded li:hover,
+.expanded li:hover a {
+  background-color: #ffd700;
+  color: black;
+}
+
+/* LOGIN REGISTER */
+.user-option i {
+  position: absolute;
+  right: 180px;
+  top: 8px;
+  font-size: 25px;
+  color: white;
+}
+
+.user-option span {
+  color: white;
+  font-family: chelsea market, cursive;
+  font-size: 22px;
+  position: absolute;
+  right: 10px;
+  top: 8px;
+}
+
+.user-option * {
+  color: PaleGreen !important;
+}
+
+.user-option:hover * {
+  color: #fff !important;
+  cursor: pointer;
+}
+
+/* ----- END OF NAVBAR ----- */
+
+.ad-section {
+  position: relative;
+}
+
+.ad-bg-container img {
+  max-width: 100%;
+}
+
+.ad-hero-container {
+  position: absolute;
+  top: 30px;
+  left: -20px;
+}
+
+.ad-frame {
+  position: absolute;
+  top: 70px;
+  right: 20px;
+}
