@@ -6,7 +6,7 @@
 
 /* LOGO */
 
-header {
+header .logo {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 6.1fr 1fr;
@@ -164,6 +164,7 @@ nav {
 
 /* ----- END OF NAVBAR ----- */
 
+/* ------ Ad Section ----- */
 .ad-section {
   position: relative;
 }
@@ -182,4 +183,356 @@ nav {
   position: absolute;
   top: 70px;
   right: 20px;
+}
+
+/* ------- End of Ad Section ------- */
+
+/* --------- Top voted, Search Section ------- */
+.user-selection {
+  height: 100vh;
+  position: relative;
+}
+
+.user-selection-header {
+  position: relative;
+}
+
+.user-selection-header img,
+.user-selection-middle img,
+.fsc-bg img {
+  width: 100%;
+}
+
+.select-top-list {
+  position: absolute;
+  left: 48.5px;
+  top: 60px;
+  z-index: 1;
+}
+
+.select-top-list::after {
+  content: url(../comicBook+Pics/select\ bg/select-list-arrow.png);
+  position: absolute;
+  right: 4px;
+  top: 14px;
+}
+
+.select-top-list select {
+  background-color: black;
+  color: white;
+  font-family: chelsea market, cursive;
+  width: 235.43px;
+  height: 52.97px;
+  font-size: 24px;
+  padding-left: 18px;
+}
+
+.new-books-bubble-container {
+  position: absolute;
+  top: 5px;
+  left: 400px;
+}
+
+.new-books-number {
+  position: absolute;
+  top: 60px;
+  left: 550px;
+  font-size: 24px;
+  color: white;
+  background-color: rgba(0, 0, 0);
+  padding: 10px;
+  font-family: chelsea market, cursive;
+}
+
+.total-books-bubble {
+  position: absolute;
+  top: -20px;
+  right: 450px;
+}
+
+.total-books-number {
+  position: absolute;
+  top: 60px;
+  right: 250px;
+  font-size: 24px;
+  font-family: chelsea market, cursive;
+  color: white;
+  padding: 10px;
+  background-color: rgb(0, 0, 0);
+}
+
+.counter-container {
+  display: flex;
+}
+
+.counter-up {
+  font-family: monospace;
+  position: relative;
+}
+
+:root {
+  --hidden: static;
+}
+
+.counter-up::after {
+  display: var(--hidden);
+  content: "|";
+  position: absolute;
+  right: 0;
+  width: 100%;
+  background-color: black;
+  animation: typing 2s steps(4) infinite forwards, blink 1s infinite;
+}
+
+@keyframes typing {
+  to {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    color: transparent;
+  }
+}
+
+.user-selection-footer-wrapper {
+  position: relative;
+}
+
+.usf-container {
+  position: absolute;
+  width: 100%;
+  top: -90px;
+}
+
+/* top list section header ends here */
+
+/* top list slider */
+.top-list-container {
+  position: absolute;
+  display: flex;
+  width: 93%;
+  height: fit-content;
+  background-color: rgba(0, 0, 0, 0.363);
+  z-index: 5;
+  top: 190px;
+  margin-left: 50px;
+  overflow-x: auto;
+}
+
+.top-list-container::-webkit-scrollbar {
+  display: none;
+}
+
+.top-list-card {
+  min-width: 87.5px;
+  height: fit-content;
+  z-index: 5;
+  position: relative;
+  transition: 0.6s;
+  margin-right: 9px;
+}
+
+.hover {
+  display: none;
+}
+
+.top-list-card:hover .hover {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.719);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: chelsea market, cursive;
+  padding: 1px;
+  font-size: 13px;
+}
+
+.top-card-img img {
+  height: 115px;
+  width: 100%;
+}
+
+.top {
+  position: absolute;
+  bottom: 4px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.484);
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  font-family: chelsea market, cursive;
+  font-size: 20px;
+}
+
+#next-btn {
+  position: absolute;
+  right: 0px;
+  top: 225px;
+  z-index: 6;
+}
+
+#prev-btn {
+  position: absolute;
+  left: 0px;
+  top: 225px;
+  z-index: 6;
+}
+
+#prev-btn img {
+  max-width: 100%;
+}
+
+/* top list slider ends here */
+
+/* filtered search section */
+.filtered-bubble {
+  position: absolute;
+  z-index: 6;
+  top: 320px;
+  left: 10px;
+}
+
+.filtered-section {
+  position: absolute;
+  bottom: 210px;
+  z-index: 6;
+  display: flex;
+}
+
+.fs-category {
+  margin-left: 40px;
+  font-size: 28px;
+  color: #fff;
+  font-family: chelsea market, cursive;
+  display: flex;
+  flex-direction: column;
+}
+
+.category select {
+  margin-left: -20px;
+}
+
+.collection {
+  margin-left: 55px;
+}
+
+.collection select {
+  margin-left: 0px;
+}
+
+.insite {
+  margin-left: 100px;
+}
+
+.insite select {
+  margin-left: -50px;
+  width: 150px !important;
+}
+
+.newsstand {
+  margin-left: 90px;
+}
+
+.newsstand select {
+  margin-left: -40px;
+  width: 200px !important;
+  padding-left: 20px !important;
+}
+
+.fs-category select {
+  position: relative;
+  top: 40px;
+  height: 37.26px;
+  width: 170px;
+  padding: 5px;
+  padding-left: 15px;
+  background-color: #ffd700;
+  color: black;
+  font-family: chelsea market, cursive;
+  text-transform: lowercase;
+  border: none;
+}
+
+/* filtered search section ends here */
+
+/* not a member yet section? */
+.character-two {
+  position: absolute;
+  right: 390px;
+  top: 342px;
+  display: flex;
+}
+
+.register-banner-bubble {
+  position: absolute;
+  right: 10px;
+  top: 350px;
+}
+
+/* end of not a member? section */
+
+/* search section */
+.search-bubble {
+  position: absolute;
+  right: 380px;
+  top: 520px;
+}
+
+.search-bar form {
+  position: absolute;
+  right: 50px;
+  top: 640px;
+  display: flex;
+  flex-direction: row;
+}
+
+.search-bar input[type="search"] {
+  padding: 15px;
+  background-color: #ffd700;
+  border: none;
+  color: black;
+  font-family: chelsea market, cursive;
+  width: 350px;
+  font-size: 28px;
+}
+
+.search-bar input[type="search"]::placeholder {
+  color: black;
+  font-family: chelsea market, cursive;
+}
+
+.search-submit {
+  position: relative;
+}
+.search-bar input[type="submit"] {
+  height: 65px;
+  background-color: black;
+  border: none;
+}
+
+.search-clipart {
+  position: absolute;
+  top: 15px;
+  left: 5px;
+}
+
+.cover {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 600px;
+  z-index: 100;
+  background-color: red;
+}
+
+.homepage-sec1 {
+  height: 100vh;
 }
