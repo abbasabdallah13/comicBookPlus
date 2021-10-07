@@ -68,3 +68,84 @@ prevButton.addEventListener("click", function () {
     i.style.left = "-" + l + "%";
   }
 });
+
+// //superhero cards on load flip
+const optionSuperhero = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.8,
+};
+
+let superheroCards = document.getElementsByClassName("card");
+let i = 0;
+let j = 0;
+
+let aboutSection = document.querySelector(".about");
+
+let observerSuperhero = new IntersectionObserver(
+  superHeroIntersects,
+  optionSuperhero
+);
+
+observerSuperhero.observe(aboutSection);
+
+function superHeroIntersects(entries, ob) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      const autoRotate = () => {
+        setTimeout(function () {
+          superheroCards[i].style.transform = "rotateY(180deg)";
+          i++;
+          if (i < superheroCards.length) {
+            autoRotate();
+            if (i == superheroCards.length - 1) {
+              console.log(i);
+              const rotateBack = () => {
+                setTimeout(function () {
+                  superheroCards[j].style.transform = "rotateY(0deg)";
+                  j++;
+                  if (j < superheroCards.length) {
+                    rotateBack();
+                  }
+                }, 50);
+              };
+              rotateBack();
+            }
+          }
+        }, 50);
+      };
+      autoRotate();
+      let i = 0;
+      let j = 0;
+    }
+  });
+}
+
+// open login-registration form
+$("#loginRegistrationButton").click(function () {
+  $(".login-registration-form-wrapper").css({ display: "flex" });
+  $(".body-cover").css({ display: "block" });
+  $("body").css({ overflow: "hidden" });
+});
+// close div on body click
+$(document).click(function (e) {
+  let loginRegistrationButton = $("#loginRegistrationButton");
+  let container = $(".login-registration-form-wrapper");
+  if (container.is(e.target)) {
+    $(".login-registration-form-wrapper").css({ display: "none" });
+    $(".body-cover").css({ display: "none" });
+    $("body").css({ overflow: "unset" });
+    console.log(e.target);
+  }
+});
+
+// login register tabs switch
+$(".login").click(function () {
+  $(".login-frame").css({ display: "grid" });
+  $(".registration-frame").css({ display: "none" });
+});
+
+$(".register").click(function () {
+  $(".login-frame").css({ display: "none" });
+  $(".registration-frame").css({ display: "block" });
+});

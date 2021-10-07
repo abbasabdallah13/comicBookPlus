@@ -12,6 +12,7 @@
     <title>Free & Legal Comics</title>
   </head>
   <body>
+    <div class="body-cover">&nbsp;</div>
     <section class="homepage-sec1">
       <header class="logo">
         <div class="free-and-legal-container">
@@ -76,12 +77,158 @@
             </ul>
           </li>
         </ul>
-        <div class="user-option">
+        <div class="user-option" id="loginRegistrationButton">
           <span>Login/Register</span><i class="far fa-user"></i>
         </div>
       </nav>
 
-      <section class="ad-section">
+      <div class="login-registration-form-wrapper">
+        <div class="login-registration-container">
+          <div class="tabs">
+            <div class="login tab">LOGIN</div>
+            <div class="register tab">REGISTER</div>
+          </div>
+          <div class="login-register-frames">
+            <div class="login-frame">
+              <div class="login-img">
+                <img src="../comicBook+Pics/formPics/loginPic.png" alt="" />
+              </div>
+              <div class="loginForm-container">
+                <form action="#" id="loginForm">
+                  <div
+                    class="input-box-container"
+                    style="background-color: #1ed400"
+                  >
+                    <div class="input-box">
+                      <input
+                        type="text"
+                        name="username"
+                        id="username"
+                        placeholder="USERNAME"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="input-box-container"
+                    style="background-color: #7600ae"
+                  >
+                    <div class="input-box">
+                      <input
+                        type="password"
+                        name="password"
+                        id="pswd"
+                        placeholder="PASSWORD"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="input-box-container"
+                    style="background-color: #820000"
+                  >
+                    <div class="input-box">
+                      <input
+                        type="submit"
+                        name="loginSubmit"
+                        id="loginSubmit"
+                        placeholder="LOGIN"
+                      />
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="registration-frame">
+              <div class="alien-bubble">
+                <img src="../comicBook+Pics/formPics/alien bubble.png" alt="" />
+              </div>
+              <div class="alien-msg">
+                <img src="../comicBook+Pics/formPics/alien-msg.png" alt="" />
+              </div>
+              <div class="registration-form-container">
+                <form action="#" id="registrationForm">
+                  <div class="personal-info-container">
+                    <div class="ibc-reg" style="background-color: #1ed400">
+                      <div class="input-box">
+                        <input type="text" placeholder="USERNAME" />
+                      </div>
+                    </div>
+                    <div class="ibc-reg" style="background-color: #7600ae">
+                      <div class="input-box">
+                        <input type="email" placeholder="EMAIL" />
+                      </div>
+                    </div>
+                    <div class="ibc-reg" style="background-color: #ec7854">
+                      <div class="input-box">
+                        <input type="password" placeholder="PASSWORD" />
+                      </div>
+                    </div>
+                    <div class="ibc-reg" style="background-color: #b89700">
+                      <div class="input-box">
+                        <input type="password" placeholder="PASSWORD" />
+                      </div>
+                    </div>
+                    <div
+                      class="ibc-reg"
+                      style="height: 51px; justify-content: left"
+                    >
+                      <input
+                        type="checkbox"
+                        name="allowUsers"
+                        id="allowUsers"
+                        value="Allow users to email me"
+                      />
+                      <label class="allow-users-label" for="allowUsers"
+                        >Allow users to email me</label
+                      >
+                    </div>
+                  </div>
+                  <div class="verification-container">
+                    <div class="verification-item-container">
+                      <label for="itemOne"
+                        >Elvis ____ lived in Graceland.</label
+                      >
+
+                      <input
+                        type="text"
+                        name="itemOne"
+                        id="itemOne"
+                        style="background-color: #cdff7c"
+                      />
+                    </div>
+
+                    <div class="verification-item-container">
+                      <label for="itemTwo"
+                        >Bugs ___ is a cartoon character.</label
+                      >
+                      <input
+                        type="text"
+                        name="itemTwo"
+                        id="itemTwo"
+                        style="background-color: #d7ff96"
+                      />
+                    </div>
+                    <div class="verification-item-container">
+                      <label for="itemThree">the opposite of Hot is:</label>
+
+                      <input
+                        type="text"
+                        name="itemThree"
+                        id="itemThree"
+                        style="background-color: #89b346"
+                      />
+                    </div>
+                  </div>
+                  <div class="register-button">
+                    <input type="submit" value="REGISTER" />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ad-section">
         <div class="ad-bg-container">
           <img
             src="../comicBook+Pics/ad section/bg.png"
@@ -94,7 +241,351 @@
         <div class="ad-frame">
           <img src="../comicBook+Pics/ad section/ad-example.png" alt="" />
         </div>
-      </section>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="cards-grid">
+        <div class="about-box">
+          <div class="about-sub-box">
+            Welcome to Comic Book Plus, the site where every day is party day!
+            We are the original and still the premier site to read and download
+            Golden and Silver Age comic books. Plus, we also hold a large and
+            growing selection of comic strips and pulp fiction. The even better
+            news is that all the content is FREE and LEGAL. This is a
+            historically significant archive, that has taken a great many people
+            thousands of hours to create and we are ever vigilant to ensure that
+            no content breaches copyright or trademark laws. We hope you enjoy
+            your time here and come back really soon!
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-front"></div>
+            <div class="card-back">
+              <img
+                src="../comicBook+Pics/comic-characters/superhero1.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-front">
+              <div class="card-logo">
+                <img src="../comicBook+Pics/bubbles/kapow.png" alt="" />
+              </div>
+            </div>
+            <div class="card-back">
+              <img
+                src="../comicBook+Pics/comic-characters/superhero2.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-front">
+              <div class="card-logo">
+                <img src="../comicBook+Pics/bubbles/kapow.png" alt="" />
+              </div>
+            </div>
+            <div class="card-back">
+              <img
+                src="../comicBook+Pics/comic-characters/superhero3.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-front">
+              <div class="card-logo">
+                <img src="../comicBook+Pics/bubbles/kapow.png" alt="" />
+              </div>
+            </div>
+            <div class="card-back">
+              <img
+                src="../comicBook+Pics/comic-characters/superhero4.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-front">
+              <div class="card-logo">
+                <img src="../comicBook+Pics/bubbles/kapow.png" alt="" />
+              </div>
+            </div>
+            <div class="card-back">
+              <img
+                src="../comicBook+Pics/comic-characters/superhero5.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-front">
+              <div class="card-logo">
+                <img src="../comicBook+Pics/bubbles/kapow.png" alt="" />
+              </div>
+            </div>
+            <div class="card-back">
+              <img
+                src="../comicBook+Pics/comic-characters/superhero6.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-front">
+              <div class="card-logo">
+                <img src="../comicBook+Pics/bubbles/kapow.png" alt="" />
+              </div>
+            </div>
+            <div class="card-back">
+              <img
+                src="../comicBook+Pics/comic-characters/superhero7.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-front">
+              <div class="card-logo">
+                <img src="../comicBook+Pics/bubbles/kapow.png" alt="" />
+              </div>
+            </div>
+            <div class="card-back">
+              <img
+                src="../comicBook+Pics/comic-characters/superhero8.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-front">
+              <div class="card-logo">
+                <img src="../comicBook+Pics/bubbles/kapow.png" alt="" />
+              </div>
+            </div>
+            <div class="card-back">
+              <img
+                src="../comicBook+Pics/comic-characters/superhero9.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-front">
+              <div class="card-logo">
+                <img src="../comicBook+Pics/bubbles/kapow.png" alt="" />
+              </div>
+            </div>
+            <div class="card-back">
+              <img
+                src="../comicBook+Pics/comic-characters/superhero10.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-front">
+              <div class="card-logo">
+                <img src="../comicBook+Pics/bubbles/kapow.png" alt="" />
+              </div>
+            </div>
+            <div class="card-back">
+              <img
+                src="../comicBook+Pics/comic-characters/superhero11.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-front">
+              <div class="card-logo">
+                <img src="../comicBook+Pics/bubbles/kapow.png" alt="" />
+              </div>
+            </div>
+            <div class="card-back">
+              <img
+                src="../comicBook+Pics/comic-characters/superhero12.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-front">
+              <div class="card-logo">
+                <img src="../comicBook+Pics/bubbles/kapow.png" alt="" />
+              </div>
+            </div>
+            <div class="card-back">
+              <img
+                src="../comicBook+Pics/comic-characters/superhero13.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-front">
+              <div class="card-logo">
+                <img src="../comicBook+Pics/bubbles/kapow.png" alt="" />
+              </div>
+            </div>
+            <div class="card-back">
+              <img
+                src="../comicBook+Pics/comic-characters/superhero14.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-front">
+              <div class="card-logo">
+                <img src="../comicBook+Pics/bubbles/kapow.png" alt="" />
+              </div>
+            </div>
+            <div class="card-back">
+              <img
+                src="../comicBook+Pics/comic-characters/superhero15.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-front">
+              <div class="card-logo">
+                <img src="../comicBook+Pics/bubbles/kapow.png" alt="" />
+              </div>
+            </div>
+            <div class="card-back">
+              <img
+                src="../comicBook+Pics/comic-characters/superhero16.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-front">
+              <div class="card-logo">
+                <img src="../comicBook+Pics/bubbles/kapow.png" alt="" />
+              </div>
+            </div>
+            <div class="card-back">
+              <img
+                src="../comicBook+Pics/comic-characters/superhero17.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-front">
+              <div class="card-logo">
+                <img src="../comicBook+Pics/bubbles/kapow.png" alt="" />
+              </div>
+            </div>
+            <div class="card-back">
+              <img
+                src="../comicBook+Pics/comic-characters/superhero18.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-front">
+              <div class="card-logo">
+                <img src="../comicBook+Pics/bubbles/kapow.png" alt="" />
+              </div>
+            </div>
+            <div class="card-back">
+              <img
+                src="../comicBook+Pics/comic-characters/superhero19.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-front">
+              <div class="card-logo">
+                <img src="../comicBook+Pics/bubbles/kapow.png" alt="" />
+              </div>
+            </div>
+            <div class="card-back">
+              <img
+                src="../comicBook+Pics/comic-characters/superhero20.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-front">
+              <div class="card-logo">
+                <img src="../comicBook+Pics/bubbles/kapow.png" alt="" />
+              </div>
+            </div>
+            <div class="card-back">
+              <img
+                src="../comicBook+Pics/comic-characters/superhero21.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-front">
+              <div class="card-logo">
+                <img src="../comicBook+Pics/bubbles/kapow.png" alt="" />
+              </div>
+            </div>
+            <div class="card-back">
+              <img
+                src="../comicBook+Pics/comic-characters/superhero22.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="user-selection" id="sectionTwo">
@@ -403,6 +894,60 @@
       </div>
     </section>
 
+    <section class="like-our-page">
+      <div class="heart-img">
+        <img
+          src="../comicBook+Pics/like our page/Heart image.png"
+          alt="heart image"
+        />
+      </div>
+      <div class="donate-text">
+        <p>
+          Donate a single amount<br />
+          OR <br />subscribe annually and you will help make it even better!
+        </p>
+      </div>
+      <div class="donate-more">
+        <img
+          src="../comicBook+Pics/like our page/dollar-envelope.png"
+          alt="dollar envelope"
+        />
+        <a href="#">CLICK FOR MORE</a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-bg">
+        <img
+          src="../comicBook+Pics/background/Homepage footer.png"
+          alt="footer"
+        />
+      </div>
+      <div class="footer-disclaimer">
+        <p>
+          <u>MISSION AND DISCLAIMER:</u> The mission of Comic Book Plus is to
+          present completely free of charge, and to the widest possible
+          audience, popular cultural works of the past. These records are
+          offered as a contribution to education and lifelong learning. They are
+          historical documents reflecting the attitudes, perspectives, and
+          beliefs of different times. We at Comic Book Plus do not endorse the
+          views expressed in these, which may contain content offensive to
+          modern users.<br />
+          We aim to house only content in the Public Domain. If you suspect that
+          any of our material may be infringing copyright, then please use our
+          contact page to let us know. So we can investigate further.
+        </p>
+      </div>
+
+      <div class="footer-nav">
+        <ul>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+      </div>
+    </footer>
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
