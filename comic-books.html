@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../comicBook+/main.css" type="text/css" />
+    <title>Comic Books</title>
+  </head>
+  <body>
+    <div class="body-cover">&nbsp;</div>
+
+    <section class="sec">
+      <header class="logo">
+        <div class="free-and-legal-container">
+          <img src="../comicBook+Pics/logo/free&legal.png" alt="" />
+        </div>
+        <div class="logo-title-container">
+          <img src="../comicBook+Pics/logo/title.png" alt="logo-title" />
+        </div>
+        <div class="est-container">
+          <img src="../comicBook+Pics/logo/est2006.png" alt="est text" />
+        </div>
+        <div class="top-strip">&nbsp</div>
+        <div class="middle-strip">
+          <img src="../comicBook+Pics/logo/Group 1.png" alt="logo-background" />
+        </div>
+        <div class="bottom-strip">&nbsp</div>
+      </header>
+
+      <nav>
+        <ul class="list-items">
+          <li class="nav-list-item">
+            <a href="../comicBook+/homepage.html" id="#">Homepage</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="#">Comics</a
+            ><i class="fas fa-angle-down list-downarrow"></i>
+            <ul class="expanded">
+              <li><a href="../comicBook+/comic-books.html">Comic Books</a></li>
+              <li><a href="#">Comic Strips</a></li>
+              <li><a href="#">Comic Marks</a></li>
+              <li><a href="#">Non-English Comic Books</a></li>
+            </ul>
+          </li>
+          <li class="nav-list-item">
+            <a href="#">Collection</a
+            ><i class="fas fa-angle-down list-downarrow"></i>
+            <ul class="expanded">
+              <li><a href="#">Fanzines</a></li>
+              <li><a href="#">British Story Papers</a></li>
+              <li><a href="#">Pulp Fiction</a></li>
+              <li><a href="#">Pamphlets</a></li>
+              <li><a href="#">Compilations</a></li>
+              <li><a href="#">Odd & Ends</a></li>
+            </ul>
+          </li>
+          <li class="nav-list-item">
+            <a href="#">Vintage</a
+            ><i class="fas fa-angle-down list-downarrow"></i>
+            <ul class="expanded">
+              <li><a href="#">Movies & TV</a></li>
+              <li><a href="#">Newspapers & Magazines</a></li>
+              <li><a href="#">Old Time Radio</a></li>
+            </ul>
+          </li>
+          <li class="nav-list-item"><a href="#">Forum</a></li>
+          <li class="nav-list-item">
+            <a href="#">Support</a
+            ><i class="fas fa-angle-down list-downarrow"></i>
+            <ul class="expanded">
+              <li><a href="#">Sitemap</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Privacy</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="user-option" id="loginRegistrationButton">
+          <span>Login/Register</span><i class="far fa-user"></i>
+        </div>
+      </nav>
+
+      <div class="login-registration-form-wrapper">
+        <div class="login-registration-container">
+          <div class="tabs">
+            <div class="login tab">LOGIN</div>
+            <div class="register tab">REGISTER</div>
+          </div>
+          <div class="login-register-frames">
+            <div class="login-frame">
+              <div class="login-img">
+                <img src="../comicBook+Pics/formPics/loginPic.png" alt="" />
+              </div>
+              <div class="loginForm-container">
+                <form action="#" id="loginForm">
+                  <div
+                    class="input-box-container"
+                    style="background-color: #1ed400"
+                  >
+                    <div class="input-box">
+                      <input
+                        type="text"
+                        name="username"
+                        id="username"
+                        placeholder="USERNAME"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="input-box-container"
+                    style="background-color: #7600ae"
+                  >
+                    <div class="input-box">
+                      <input
+                        type="password"
+                        name="password"
+                        id="pswd"
+                        placeholder="PASSWORD"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="input-box-container"
+                    style="background-color: #820000"
+                  >
+                    <div class="input-box">
+                      <input
+                        type="submit"
+                        name="loginSubmit"
+                        id="loginSubmit"
+                        placeholder="LOGIN"
+                      />
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="registration-frame">
+              <div class="alien-bubble">
+                <img src="../comicBook+Pics/formPics/alien bubble.png" alt="" />
+              </div>
+              <div class="alien-msg">
+                <img src="../comicBook+Pics/formPics/alien-msg.png" alt="" />
+              </div>
+              <div class="registration-form-container">
+                <form action="#" id="registrationForm">
+                  <div class="personal-info-container">
+                    <div class="ibc-reg" style="background-color: #1ed400">
+                      <div class="input-box">
+                        <input type="text" placeholder="USERNAME" />
+                      </div>
+                    </div>
+                    <div class="ibc-reg" style="background-color: #7600ae">
+                      <div class="input-box">
+                        <input type="email" placeholder="EMAIL" />
+                      </div>
+                    </div>
+                    <div class="ibc-reg" style="background-color: #ec7854">
+                      <div class="input-box">
+                        <input type="password" placeholder="PASSWORD" />
+                      </div>
+                    </div>
+                    <div class="ibc-reg" style="background-color: #b89700">
+                      <div class="input-box">
+                        <input type="password" placeholder="PASSWORD" />
+                      </div>
+                    </div>
+                    <div
+                      class="ibc-reg"
+                      style="height: 51px; justify-content: left"
+                    >
+                      <input
+                        type="checkbox"
+                        name="allowUsers"
+                        id="allowUsers"
+                        value="Allow users to email me"
+                      />
+                      <label class="allow-users-label" for="allowUsers"
+                        >Allow users to email me</label
+                      >
+                    </div>
+                  </div>
+                  <div class="verification-container">
+                    <div class="verification-item-container">
+                      <label for="itemOne"
+                        >Elvis ____ lived in Graceland.</label
+                      >
+
+                      <input
+                        type="text"
+                        name="itemOne"
+                        id="itemOne"
+                        style="background-color: #cdff7c"
+                      />
+                    </div>
+
+                    <div class="verification-item-container">
+                      <label for="itemTwo"
+                        >Bugs ___ is a cartoon character.</label
+                      >
+                      <input
+                        type="text"
+                        name="itemTwo"
+                        id="itemTwo"
+                        style="background-color: #d7ff96"
+                      />
+                    </div>
+                    <div class="verification-item-container">
+                      <label for="itemThree">the opposite of Hot is:</label>
+
+                      <input
+                        type="text"
+                        name="itemThree"
+                        id="itemThree"
+                        style="background-color: #89b346"
+                      />
+                    </div>
+                  </div>
+                  <div class="register-button">
+                    <input type="submit" value="REGISTER" />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="buy-now-img" style="width: 176px; height: 103px">
+        <img
+          src="../comicBook+Pics/comic books page/Buy now img.png"
+          alt="Buy now"
+        />
+      </div>
+
+      <div class="ad-frame-not-homepage">
+        <img src="../comicBook+Pics/ad section/ad-example.png" alt="ad" />
+      </div>
+
+      <div class="ad-girl">
+        <img
+          src="../comicBook+Pics/comic books page/ad girl.png"
+          alt="ad girl"
+        />
+      </div>
+
+      <div class="page-location-strip">
+        <div class="page-location-strip-bg">
+          <img
+            src="../comicBook+Pics/comic books page/page-location-bg.png"
+            alt="page loaction strip background"
+          />
+        </div>
+        <div class="page-location">
+          <p class="underlined">Comics</p>
+          <p class="gt">&nbsp;&gt;&nbsp;</p>
+          <p class="underlined">Comic Books</p>
+        </div>
+      </div>
+
+      <div class="about-comics-page">
+        <div class="about-comics-page-bg">
+          <img
+            src="../comicBook+Pics/comic books page/about-container.png"
+            alt="about comics page background"
+          />
+        </div>
+        <div class="about-comics-page-text">
+          <p>
+            Welcome to the main page of our massive public domain comic book
+            archive. True gems to download or read online. So many, it is
+            impossible to read them all! The majority of our books belong to
+            what has been termed the Golden Age of Comics. This began primarily
+            with newspaper reprints and then "went up, up and away" with the
+            introduction of Superman. Styles changed, new genres superseded old
+            and then a new era dawned, the Silver Age of Comics, of which we
+            also have many examples. For what was once a massive industry, the
+            publishers and their successors often took little care of their
+            work. Many of the comics were either not copyrighted correctly, or
+            the copyright was not renewed. Through this oversight thousands of
+            comic books lapsed into what is called the "Public Domain", which
+            means that there is now no legal owner. That is why we can bring you
+            all of these FREE and LEGALLY! So take our word for it, if you
+            browse around you are certain to spend a great many happy hours
+            here!
+          </p>
+        </div>
+      </div>
+      <div class="filtered-search">
+        <div
+          class="filtered-search-comics-page-container"
+          style="
+            background: url(../comicBook+Pics/comic\ books\ page/books.png);
+            border: unset;
+          "
+        >
+          <div class="no-of-books-total">
+            <p class="no-of-books-title">TOTAL:</p>
+            <p class="no-of-books-no">123456 books</p>
+          </div>
+
+          <div class="no-of-books-new">
+            <p class="no-of-books-title">NEW:</p>
+            <p class="no-of-books-no">12345 books</p>
+          </div>
+        </div>
+        <div
+          class="filtered-search-comics-page-container"
+          style="background-color: #8436ff"
+        >
+          Category
+          <select class="small-select">
+            <option value="a">select category</option>
+          </select>
+        </div>
+        <div
+          class="filtered-search-comics-page-container"
+          style="background-color: #0765f2"
+        >
+          Collection
+          <select class="small-select">
+            <option>select collection</option>
+          </select>
+        </div>
+        <div
+          class="filtered-search-comics-page-container"
+          style="background-color: #aa0000"
+        >
+          Insite
+          <select class="small-select">
+            <option>select insite page</option>
+          </select>
+        </div>
+        <div
+          class="filtered-search-comics-page-container"
+          style="background-color: #ff4242"
+        >
+          Newsstand
+          <select class="small-select">
+            <option>select date</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="top-category-list">
+        <div class="top-list-select">
+          <select name="top-list-select" id="top-list-select">
+            <option value="#">Latest Comics</option>
+          </select>
+        </div>
+        <div class="side-top-list-cards">
+          <div class="side-top-list-card">
+            <div class="side-top-list-card-img">
+              <img src="../comicBook+Pics/select bg/top-ex/top3.jpg" alt="" />
+            </div>
+            <div class="side-top-list-card-details">
+              <div class="side-top-list-card-title">Streamline 123</div>
+              <div class="side-top-list-card-pages">13 pages</div>
+            </div>
+          </div>
+          <div class="side-top-list-card">
+            <div class="side-top-list-card-img">
+              <img src="../comicBook+Pics/select bg/top-ex/top4.jpg" alt="" />
+            </div>
+            <div class="side-top-list-card-details">
+              <div class="side-top-list-card-title">Shadow</div>
+              <div class="side-top-list-card-pages">10 pages</div>
+            </div>
+          </div>
+          <div class="side-top-list-card">
+            <div class="side-top-list-card-img">
+              <img src="../comicBook+Pics/select bg/top-ex/top5.jpg" alt="" />
+            </div>
+            <div class="side-top-list-card-details">
+              <div class="side-top-list-card-title">Appointment Danger</div>
+              <div class="side-top-list-card-pages">13 pages</div>
+            </div>
+          </div>
+          <div class="side-top-list-card">
+            <div class="side-top-list-card-img">
+              <img src="../comicBook+Pics/select bg/top-ex/top6.jpg" alt="" />
+            </div>
+            <div class="side-top-list-card-details">
+              <div class="side-top-list-card-title">
+                The adventure of Robin Hood
+              </div>
+              <div class="side-top-list-card-pages">21 pages</div>
+            </div>
+          </div>
+          <div class="side-top-list-card">
+            <div class="side-top-list-card-img">
+              <img src="../comicBook+Pics/select bg/top-ex/top7.jpg" alt="" />
+            </div>
+            <div class="side-top-list-card-details">
+              <div class="side-top-list-card-title">Rover</div>
+              <div class="side-top-list-card-pages">14 pages</div>
+            </div>
+          </div>
+          <div class="side-top-list-card">
+            <div class="side-top-list-card-img">
+              <img src="../comicBook+Pics/select bg/top-ex/top8.jpg" alt="" />
+            </div>
+            <div class="side-top-list-card-details">
+              <div class="side-top-list-card-title">Rover v2</div>
+              <div class="side-top-list-card-pages">27 pages</div>
+            </div>
+          </div>
+          <div class="side-top-list-card">
+            <div class="side-top-list-card-img">
+              <img src="../comicBook+Pics/select bg/top-ex/top9.jpg" alt="" />
+            </div>
+            <div class="side-top-list-card-details">
+              <div class="side-top-list-card-title">Rover v3</div>
+              <div class="side-top-list-card-pages">16 pages</div>
+            </div>
+          </div>
+          <div class="side-top-list-card">
+            <div class="side-top-list-card-img">
+              <img src="../comicBook+Pics/select bg/top-ex/top10.jpg" alt="" />
+            </div>
+            <div class="side-top-list-card-details">
+              <div class="side-top-list-card-title">Rover v4</div>
+              <div class="side-top-list-card-pages">11 pages</div>
+            </div>
+          </div>
+          <div class="side-top-list-card">
+            <div class="side-top-list-card-img">
+              <img src="../comicBook+Pics/select bg/top-ex/top10.jpg" alt="" />
+            </div>
+            <div class="side-top-list-card-details">
+              <div class="side-top-list-card-title">Rover v4</div>
+              <div class="side-top-list-card-pages">11 pages</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="top-list-scroll">
+          <img
+            src="../comicBook+Pics/comic books page/scroll-up.png"
+            alt="scroll up"
+            id="scrollUp"
+          /><img
+            src="../comicBook+Pics/comic books page/scroll-down.png"
+            alt="scroll down"
+            id="scrollDown"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="publisher sec">
+      <div class="table-opace"></div>
+      <div class="black-glass">
+        <div class="black-glass-top">
+          <div class="publisher-title">Publisher: ACE Magazines</div>
+        </div>
+        <div class="black-glass-bottom">
+          <div class="publisher-card">
+            <div class="flex-center">
+              <img
+                src="../comicBook+Pics/comic books page/publisher1.png"
+                alt="publisher collection image"
+                class="max-width border-3px"
+              />
+            </div>
+            <div class="publisher-about flex-center">
+              <p>
+                Ace Magazines, also known as Ace Periodicals, Ace Comics, and
+                Periodical House was an active publisher between 1940 - 1956.
+                The company's most successful superhero series was Super-Mystery
+                Comics featuring Magno the Magnetic Man and his boy partner
+                Davey. Horror titles included Baffling Mysteries, Hand of Fate
+                and Web of Mystery. Their contribution to the crime comics genre
+                was Crime Must Pay the Penalty. Some of their longest running
+                series were the four romance titles Glamorous Romances, Love At
+                First Sight, Love Experiences, and Real Love. The romance titles
+                began in the late 1940's, after the superhero books faded in
+                popularity, and continued until the company ceased publishing
+                comic books in 1956.
+              </p>
+            </div>
+          </div>
+          <div class="publisher-details flex-center">
+            <div class="publisher-table">
+              <div class="flex table-row">
+                <div class="flex-center table-header">Available Online:</div>
+                <div class="flex-center table-content">
+                  Titles: 43 | Books: 703
+                </div>
+              </div>
+              <div class="flex table-row">
+                <div class="flex-center table-header">Latest Comic Book:</div>
+                <div class="flex-center table-content">
+                  Four Favorites 32 | Uploaded: Oct 9, 2021
+                </div>
+              </div>
+              <div class="flex table-row">
+                <div class="flex-center table-header">Titles:</div>
+                <div class="table-content flex-center">
+                  All Love (7) | All Romances (5) | Andy Comics (2) | Atomic
+                  War! (4) | Baffling Mysteries (24) | Banner Comics (3) | The
+                  Beyond (31) | Complete Love Magazine (33) | Crime Must Pay the
+                  Penalty (46) | Dotty (6) | Ernie Comics (4) | Four Favorites
+                  (41) | Fun Time (3) | Glamorous Romances (52) | The Hand of
+                  Fate (23) | Hap Hazard Comics (26) | Heroes of the Wild
+                  Frontier (2) | Indian Braves (4) | Lightning Comics (10) |
+                  Love at First Sight (43) | Love Experiences (39) | Men Against
+                  Crime (5) | Monkeyshines Comics (26) | Mr Risk (2) | Our Flag
+                  (6) | Penalty (2) | Real Love (52) | Real Secrets (4) |
+                  Revealing Romances (8) | Science Comics (5) | Scream Comics
+                  (19) | Space Action (3) | Super-Mystery Comics (57) |
+                  Sure-Fire Comics (4) | Ten-Story Love (34) | Trapped (4) |
+                  Vicky (5) | War Heroes (9) | Web of Mystery (32) | Western
+                  Adventures (9) | Western Love Trails (3) | World War III (2) |
+                  One Shots (4)
+                </div>
+              </div>
+              <div class="flex table-row">
+                <div class="flex-center table-header">Publication History:</div>
+                <div class="table-content flex-center">
+                  Active: 1940 - 1956 | Number of Series: 48 | Number of Issues:
+                  668
+                </div>
+              </div>
+              <div class="flex table-row">
+                <div class="flex-center table-header">Branding:</div>
+                <div class="table-content flex-center">
+                  Indicia Publishers: 17 | Brand Groups: 2 | Brand Emblems: 2
+                </div>
+              </div>
+              <div class="flex table-row">
+                <div class="flex-center table-header">Indicia Publishers:</div>
+                <div class="table-content flex-center">
+                  A. A. Wyn, Inc. | Ace Books, Inc. | Ace Magazines, Inc. | Ace
+                  Periodicals, Inc. | Ace Publications | Ace Publications, Inc.
+                  | Current Books, Inc. | Humor Publications, Inc. | Junior
+                  Books, Inc. | Junior Magazines, Inc. | L. B. Fischer
+                  Publishing Corp. | Periodical House, Inc. | Publishers
+                  Specialists, Inc. | RAR Publishing Co., Inc. | Readers'
+                  Research, Inc. | Red Seal Publications, Inc. | Unity
+                  Publishing Corp.
+                </div>
+              </div>
+              <div class="flex table-row">
+                <div class="flex-center table-header">Brand Groups:</div>
+                <div class="table-content flex-center">
+                  Ace | An Ace Magazine
+                </div>
+              </div>
+              <div class="flex table-row">
+                <div class="flex-center table-header">External Links:</div>
+                <div class="table-content flex-center">
+                  Grand Comics Database
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="publisher sec">
+      <div class="table-opace"></div>
+      <div class="black-glass">
+        <div class="black-glass-top">
+          <div class="publisher-title">Publisher: Ajax-Farrell</div>
+        </div>
+        <div class="black-glass-bottom">
+          <div class="publisher-card">
+            <div class="flex-center">
+              <img
+                src="../comicBook+Pics/comic books page/publisher2.png"
+                alt="publisher collection image"
+                class="max-width border-3px"
+              />
+            </div>
+            <div class="publisher-about flex-center">
+              <p>
+                Ajax-Farrell was a comic book publishing house from the 1950s
+                owned by Farrell Publishing. Its brand was published under
+                numerous imprint publishers such as: Steinway Comics, America's
+                Best Comics, Four Star Publications, Excellent Publications,
+                Farrell Comics, Four Star Comic Corp., Superior Comics Inc. &
+                World Famous Comics Inc. They published a large variety of
+                magazines covering a range of genres.
+              </p>
+            </div>
+          </div>
+          <div class="publisher-details flex-center">
+            <div class="publisher-table">
+              <div class="flex table-row">
+                <div class="flex-center table-header">Available Online:</div>
+                <div class="flex-center table-content">
+                  Titles: 56 | Books: 306
+                </div>
+              </div>
+              <div class="flex table-row">
+                <div class="flex-center table-header">Latest Comic Book:</div>
+                <div class="flex-center table-content">
+                  Oklahoma Kid 4 | Uploaded: Sep 4, 2021
+                </div>
+              </div>
+              <div class="flex table-row">
+                <div class="flex-center table-header">Titles:</div>
+                <div class="table-content flex-center">
+                  All True Romance (8) | Apache Trail (4) | Battle Report (4) |
+                  Billy Bunny (5) | Black Cobra (3) | Brenda Starr (1) | Bride's
+                  Diary (2) | Bride's Secrets (8) | Bughouse (3) | Captain
+                  Flight Comics (13) | Captain Jet (5) | Dark Shadows (4) | Dear
+                  Heart (2) | Eva The Imp (1) | Fantastic Comics (1) | Fantastic
+                  Fears (6) | Fighting Man (10) | The Flame (3) | Frisky Animals
+                  on Parade (4) | Full of Fun (3) | Funny Fables (1) | G-I in
+                  Battle (7) | G. I. in Battle (6) | Gunsmoke Trail (4) | Happy
+                  Jack (1) | Haunted Thrills (12) | Hi-Ho Comics (3) | Linda (2)
+                  | Lone Eagle (4) | The Lone Rider (30) | Lonely Heart (6) |
+                  Madhouse (6) | Men in Action (6) | Midnight (7) | Mighty Bear
+                  (2) | My Personal Problem (1955 Series) (3) | My Personal
+                  Problem (1957 Series) (2) | Oklahoma Kid (4) | Phantom Lady
+                  (4) | The Rider (5) | Samson (4) | Secret Love (1957 Series)
+                  (4) | Spunky (6) | Strange (6) | Strange Fantasy (14) |
+                  Strange Journey (4) | Super Cat (5) | Sweetie Pie (2) | Swift
+                  Arrow (9) | Today's Brides (1) | Vooda (3) | Voodoo (21) | War
+                  Report (2) | War Stories (3) | Wonder Boy (3) | One Shots (14)
+                </div>
+              </div>
+              <div class="flex table-row">
+                <div class="flex-center table-header">Publication History:</div>
+                <div class="table-content flex-center">
+                  Active: 1951 - 1958 | Number of Series: 62 | Number of Issues:
+                  321
+                </div>
+              </div>
+              <div class="flex table-row">
+                <div class="flex-center table-header">Branding:</div>
+                <div class="table-content flex-center">
+                  Indicia Publishers: 12 | Brand Groups: 3 | Brand Emblems: 8
+                </div>
+              </div>
+              <div class="flex table-row">
+                <div class="flex-center table-header">Indicia Publishers:</div>
+                <div class="table-content flex-center">
+                  Ajax Pub., Inc. | Ajax Publications | Ajax Publications, Inc.
+                  | Excellent Pub., Inc. | Excellent Publications Inc. | Farrell
+                  Comics, Inc. | Four Star Comic Corp. | Four Star Publications,
+                  Inc. | Steinway Comic Pub. Inc. | Steinway Pub. Inc. |
+                  Superior Comics Inc. | World Famous Comics Inc.
+                </div>
+              </div>
+              <div class="flex table-row">
+                <div class="flex-center table-header">Brand Groups:</div>
+                <div class="table-content flex-center">
+                  Farrell | America's Best | Ajax
+                </div>
+              </div>
+              <div class="flex table-row">
+                <div class="flex-center table-header">External Links:</div>
+                <div class="table-content flex-center">
+                  Grand Comics Database
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="like-our-page">
+      <div class="heart-img">
+        <img
+          src="../comicBook+Pics/like our page/Heart image.png"
+          alt="heart image"
+        />
+      </div>
+      <div class="donate-text">
+        <p>
+          Donate a single amount<br />
+          OR <br />subscribe annually and you will help make it even better!
+        </p>
+      </div>
+      <div class="donate-more">
+        <img
+          src="../comicBook+Pics/like our page/dollar-envelope.png"
+          alt="dollar envelope"
+        />
+        <a href="#">CLICK FOR MORE</a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-disclaimer">
+        <p>
+          <u>MISSION AND DISCLAIMER:</u> The mission of Comic Book Plus is to
+          present completely free of charge, and to the widest possible
+          audience, popular cultural works of the past. These records are
+          offered as a contribution to education and lifelong learning. They are
+          historical documents reflecting the attitudes, perspectives, and
+          beliefs of different times. We at Comic Book Plus do not endorse the
+          views expressed in these, which may contain content offensive to
+          modern users.<br />
+          We aim to house only content in the Public Domain. If you suspect that
+          any of our material may be infringing copyright, then please use our
+          contact page to let us know. So we can investigate further.
+        </p>
+      </div>
+
+      <div class="footer-nav">
+        <ul>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../comicBook+/comic-book.js"></script>
+    <script
+      src="https://kit.fontawesome.com/38f271e344.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

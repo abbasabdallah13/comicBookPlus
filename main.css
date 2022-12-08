@@ -10,6 +10,10 @@
 html {
   cursor: url(../comicBook+Pics/cursors/comic\ selector.png), default;
   overflow-x: hidden;
+  overflow-y: overlay;
+}
+html::-webkit-scrollbar {
+  display: none;
 }
 
 .register-button input[type="submit"]:hover,
@@ -22,13 +26,15 @@ html {
 .user-option:hover,
 .list-items *:hover,
 .donate-more a,
-.footer-nav ul li a {
+.footer-nav ul li a,
+.top-list-scroll,
+.small-select {
   cursor: url(../comicBook+Pics/cursors/pointer\ cursor.png), auto;
 }
 
 /* end of cursors */
 
-.homepage-sec1 {
+.sec {
   height: 100vh;
   position: relative;
 }
@@ -119,7 +125,8 @@ nav {
 }
 
 .nav-list-item:hover,
-.nav-list-item:hover > a {
+.nav-list-item:hover > a,
+.nav-list-item:hover > i {
   background-color: #ffd700;
   color: black;
 }
@@ -451,7 +458,6 @@ input:focus {
   margin-bottom: 20px;
   margin-left: 5px;
   margin-right: 5px;
-  height: 100vh;
   background-color: #e8f266;
 }
 
@@ -813,7 +819,7 @@ input:focus {
   padding-left: 20px !important;
 }
 
-.fs-category select {
+.fs-select {
   position: relative;
   top: 40px;
   height: 37.26px;
@@ -907,6 +913,8 @@ input:focus {
   position: relative;
   cursor: url(../comicBook+Pics/cursors/heart\ cursor.png), auto;
   border: 3px solid black;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .heart-img {
@@ -952,9 +960,14 @@ input:focus {
 /* footer */
 
 footer {
+  width: 1452px;
+  height: 264px;
   position: relative;
   margin-top: 10px;
   border: 3px solid black;
+  margin-left: 5px;
+  margin-right: 5px;
+  background: url(../comicBook+Pics/background/Homepage\ footer.png);
 }
 
 .footer-bg img {
@@ -994,3 +1007,362 @@ footer {
 }
 
 /* end of footer */
+
+/* comic books page */
+.buy-now-img {
+  position: absolute;
+  top: 201px;
+  left: 0px;
+}
+
+/* comic books page */
+/* ad section */
+.ad-frame-not-homepage {
+  position: absolute;
+  top: 201px;
+  left: 223px;
+}
+
+.ad-girl {
+  position: absolute;
+  left: 958px;
+  top: 201px;
+}
+
+/* end of ad section */
+
+/*  page locations */
+.page-location-strip-bg {
+  position: absolute;
+  top: 487px;
+  left: 3px;
+}
+
+.page-location {
+  display: flex;
+  position: absolute;
+  top: 490px;
+  left: 15px;
+  font-family: chelsea market;
+  color: #ffd700;
+  font-size: 18px;
+  -webkit-text-stroke: 1px #000;
+}
+
+.underlined {
+  text-decoration: underline;
+  text-decoration-color: #ffd700;
+}
+
+.gt {
+  font-size: 24px;
+}
+/* end of page location */
+
+/* about */
+.about-comics-page {
+  position: absolute;
+  top: 525px;
+  left: 3px;
+}
+
+.about-comics-page-text {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  height: 108px;
+  padding-right: 15px;
+  font-family: chelsea market;
+}
+/* end of about */
+
+/* filtered search */
+.filtered-search {
+  width: 1275px;
+  height: 90px;
+  position: absolute;
+  top: 664px;
+  left: 3px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1;
+  grid-column-gap: 11.125px;
+}
+
+.filtered-search-comics-page-container {
+  width: 246.1px;
+  border: 3px solid black;
+  text-align: center;
+  font-size: 21px;
+  font-family: chelsea market;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+/* end of filtered search */
+
+/* no of books */
+.no-of-books-total,
+.no-of-books-new {
+  position: absolute;
+  display: flex;
+  font-size: 20px;
+  left: 17px;
+}
+
+.no-of-books-total {
+  top: 6px;
+}
+
+.no-of-books-new {
+  bottom: 6px;
+}
+
+.no-of-books-title {
+  color: black;
+  font-weight: 700;
+}
+
+.no-of-books-no {
+  position: relative;
+  left: 7px;
+  color: #a00505;
+}
+
+.small-select {
+  width: 196px;
+  height: 23px;
+  padding-left: 10px;
+  background-color: #ffd700;
+  color: black;
+  font-family: chelsea market, cursive;
+  text-transform: lowercase;
+  border: none;
+  font-size: 15px;
+}
+
+/* end of no of books */
+
+/* side top list */
+.top-category-list {
+  position: absolute;
+  top: 201px;
+  right: 3px;
+  height: 553px;
+  width: 179.5px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 25px 506px 1fr;
+  padding: 0px;
+}
+
+.side-top-list-cards {
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  overflow-y: hidden;
+}
+
+.side-top-list-cards::-webkit-scrollbar {
+  display: none;
+}
+
+.top-list-select {
+  background-color: white;
+  font-family: chelsea market;
+  border: 3px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-list-select select {
+  background-color: white;
+  color: black;
+  border: none;
+  font-family: chelsea market;
+  font-size: 16px;
+  height: 21px;
+}
+
+.side-top-list-card {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  min-height: 63.25px;
+  border: 3px solid black;
+  border-top: none;
+  background: linear-gradient(180deg, #000d4e 34.9%, #c5bd00 91.15%);
+  position: relative;
+  transition: 1s;
+}
+
+.side-top-list-card-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.side-top-list-card-img img {
+  width: 35px;
+  height: 48px;
+}
+
+.side-top-list-card-details {
+  flex-direction: column;
+  color: white;
+  font-family: chelsea market;
+  font-size: 14px;
+  position: relative;
+}
+
+.side-top-list-card-title {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.side-top-list-card-pages {
+  font-size: 12px;
+  color: black;
+  text-align: right;
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  font-weight: 700;
+}
+.top-list-scroll {
+  background-color: #687068;
+  box-sizing: border-box;
+  border: 3px solid black;
+  border-top: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* end of side top list */
+
+/* publisher section */
+.publisher {
+  background: url(../comicBook+Pics/comic\ books\ page/publisher\ background.png);
+  border: 3px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 15px;
+}
+
+.table-opace {
+  position: absolute;
+  top: 141px;
+  left: 450px;
+  height: 565px;
+  width: 233px;
+  background-color: black;
+  z-index: 1;
+}
+
+.black-glass {
+  width: 1329px;
+  height: 658px;
+  background-color: rgba(0, 0, 0, 0.46);
+  display: grid;
+  grid-template-rows: 91px 1fr;
+}
+
+.black-glass-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 31;
+}
+
+.publisher-title {
+  display: flex;
+  width: 100%;
+  background-color: rgba(202, 79, 60, 0.91);
+  justify-content: center;
+  height: 48px;
+  font-family: chelsea market;
+  font-size: 26px;
+  color: white;
+  align-items: center;
+}
+
+.black-glass-bottom {
+  display: grid;
+  grid-template-columns: 374px 1fr;
+}
+
+.publisher-card {
+  display: grid;
+  grid-template-rows: 270px 1fr;
+}
+
+.publisher-about {
+  font-size: 13px;
+  color: white;
+  font-family: chelsea market;
+  text-align: justify;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.publisher-table {
+  width: 931px;
+  height: 565px;
+  background-color: hsla(46, 77%, 83%, 0.91);
+  display: grid;
+  grid-template-rows: repeat(2, 35px) 266px repeat(2, 35px) 89px repeat(2, 35px);
+  z-index: 2;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 233px 1fr;
+}
+
+.table-header {
+  font-size: 20px;
+  color: #166477;
+  font-family: chelsea market;
+  border-bottom: 1px solid #166477;
+}
+
+.table-content {
+  font-size: 14px;
+  font-family: chelsea market;
+  color: #166477;
+  border-bottom: 1px solid #166477;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.border-3px {
+  border: 3px solid black;
+}
+
+.max-width {
+  max-width: 100%;
+}
+
+.chelsea {
+  font-family: chelsea market;
+}
+
+.justify {
+  text-align: justify;
+}
+
+/* end of publisher section */
+/* end of comic books page */

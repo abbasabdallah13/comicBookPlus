@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" type="text/css" />
+    <link rel="stylesheet" href="./main.css" type="text/css" />
     <script
       src="https://kit.fontawesome.com/38f271e344.js"
       crossorigin="anonymous"
@@ -13,10 +13,10 @@
   </head>
   <body>
     <div class="body-cover">&nbsp;</div>
-    <section class="homepage-sec1">
+    <section class="sec">
       <header class="logo">
         <div class="free-and-legal-container">
-          <img src="../comicBook+Pics/logo/free&legal.png" alt="" />
+          <img src="../comicBook+Pics/logo/free&legal.png" alt="free" />
         </div>
         <div class="logo-title-container">
           <img src="../comicBook+Pics/logo/title.png" alt="logo-title" />
@@ -33,12 +33,14 @@
 
       <nav>
         <ul class="list-items">
-          <li class="nav-list-item"><a href="#" id="#">Homepage</a></li>
+          <li class="nav-list-item">
+            <a href="../comicBook+/homepage.html" id="#">Homepage</a>
+          </li>
           <li class="nav-list-item">
             <a href="#">Comics</a
             ><i class="fas fa-angle-down list-downarrow"></i>
             <ul class="expanded">
-              <li><a href="#">Comic Books</a></li>
+              <li><a href="../comicBook+/comic-books.html">Comic Books</a></li>
               <li><a href="#">Comic Strips</a></li>
               <li><a href="#">Comic Marks</a></li>
               <li><a href="#">Non-English Comic Books</a></li>
@@ -244,7 +246,7 @@
       </div>
     </section>
 
-    <section class="about">
+    <section class="about sec">
       <div class="cards-grid">
         <div class="about-box">
           <div class="about-sub-box">
@@ -588,7 +590,7 @@
       </div>
     </section>
 
-    <section class="user-selection" id="sectionTwo">
+    <section class="sec" id="sectionTwo">
       <header class="user-selection-header">
         <img src="../comicBook+Pics/select bg/top div/test.png" alt="header" />
         <div class="select-top-list">
@@ -953,6 +955,6 @@
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
       crossorigin="anonymous"
     ></script>
-    <script src="../comicBook+/main.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>

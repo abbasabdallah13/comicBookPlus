@@ -123,6 +123,7 @@ function superHeroIntersects(entries, ob) {
 
 // open login-registration form
 $("#loginRegistrationButton").click(function () {
+  console.log("button clicked");
   $(".login-registration-form-wrapper").css({ display: "flex" });
   $(".body-cover").css({ display: "block" });
   $("body").css({ overflow: "hidden" });
